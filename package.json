@@ -1,0 +1,37 @@
+{
+  "name": "make-keystore",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "description": "",
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.11.18",
+    "@types/node-fetch": "^2.6.2",
+    "chai": "^4.3.7",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-promise": "^5.2.0",
+    "ethers": "^5.5.3",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "solhint": "^3.3.6",
+    "solidity-coverage": "^0.7.18",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.1",
+    "typescript": "^4.9.4",
+    "web3": "^1.7.0"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "makeKey": "ts-node --esm scripts/makeKey.ts",
+    "decryptKey": "ts-node --esm scripts/decryptKey.ts",
+    "encryptKey": "ts-node --esm scripts/encryptKey.ts"
+  }
+}
